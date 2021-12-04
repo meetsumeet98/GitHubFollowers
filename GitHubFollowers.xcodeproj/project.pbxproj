@@ -13,6 +13,9 @@
 		6F629EDA2752876C00521FA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F629ED82752876C00521FA3 /* LaunchScreen.storyboard */; };
 		6F629EEB2752926500521FA3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F629EEA2752926500521FA3 /* SearchViewController.swift */; };
 		6F629EEE2752927A00521FA3 /* FavouritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F629EED2752927A00521FA3 /* FavouritesListViewController.swift */; };
+		6FF625A62754D2A1003D0CB6 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF625A52754D2A1003D0CB6 /* GFButton.swift */; };
+		6FF625A92754D5E6003D0CB6 /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF625A82754D5E6003D0CB6 /* GFTextField.swift */; };
+		6FF625AC275549FE003D0CB6 /* FollowerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF625AB275549FE003D0CB6 /* FollowerListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		6F629EDB2752876C00521FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F629EEA2752926500521FA3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		6F629EED2752927A00521FA3 /* FavouritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesListViewController.swift; sourceTree = "<group>"; };
+		6FF625A52754D2A1003D0CB6 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
+		6FF625A82754D5E6003D0CB6 /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
+		6FF625AB275549FE003D0CB6 /* FollowerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				6F629ECD2752876A00521FA3 /* AppDelegate.swift */,
 				6F629ECF2752876A00521FA3 /* SceneDelegate.swift */,
 				6F629EEA2752926500521FA3 /* SearchViewController.swift */,
+				6FF625A52754D2A1003D0CB6 /* GFButton.swift */,
+				6FF625AB275549FE003D0CB6 /* FollowerListViewController.swift */,
+				6FF625A82754D5E6003D0CB6 /* GFTextField.swift */,
 				6F629EED2752927A00521FA3 /* FavouritesListViewController.swift */,
 				6F629ED62752876C00521FA3 /* Assets.xcassets */,
 				6F629ED82752876C00521FA3 /* LaunchScreen.storyboard */,
@@ -136,7 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FF625A92754D5E6003D0CB6 /* GFTextField.swift in Sources */,
 				6F629ECE2752876A00521FA3 /* AppDelegate.swift in Sources */,
+				6FF625A62754D2A1003D0CB6 /* GFButton.swift in Sources */,
+				6FF625AC275549FE003D0CB6 /* FollowerListViewController.swift in Sources */,
 				6F629EEB2752926500521FA3 /* SearchViewController.swift in Sources */,
 				6F629EEE2752927A00521FA3 /* FavouritesListViewController.swift in Sources */,
 				6F629ED02752876A00521FA3 /* SceneDelegate.swift in Sources */,
