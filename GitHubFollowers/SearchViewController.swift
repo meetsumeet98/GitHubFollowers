@@ -8,9 +8,13 @@
 import UIKit
 
 class SearchViewController: UIViewController {
+
+    static let alertTitle = "Invalid Username"
+    static let alertMessage = "Please enter a valid username, we need to know who to look for 😃."
+
     let logoImageView = UIImageView()
     let userNameTextField = GFTextField()
-    let ctaButton = GFButton(title: "Get Followers", backgroundColor: .systemGreen)
+    let ctaButton = GFButton(backgroundColor: .systemGreen)
 
     // MARK:- Lifecycle
 
@@ -66,6 +70,7 @@ class SearchViewController: UIViewController {
         ctaButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(ctaButton)
 
+        ctaButton.setTitle("Get Followers", for: .normal)
         ctaButton.addTarget(self, action: #selector(ctaButtonTapped), for: .touchUpInside)
 
         NSLayoutConstraint.activate([
@@ -83,7 +88,12 @@ class SearchViewController: UIViewController {
 
     @objc
     private func ctaButtonTapped() {
-        guard let userName =  userNameTextField.text else {
+        guard let userName =  userNameTextField.text, !userName.isEmpty else {
+            presentGFAlertControllerOnMainThread(
+                title: SearchViewController.alertTitle,
+                description: SearchViewController.alertMessage,
+                actionButtonText: "Ok")
+
             return
         }
 

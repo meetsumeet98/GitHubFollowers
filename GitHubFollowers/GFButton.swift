@@ -8,14 +8,14 @@
 import UIKit
 
 class GFButton: UIButton {
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
     }
 
-    init(title: String, backgroundColor: UIColor) {
+    init(backgroundColor: UIColor) {
         super.init(frame: .zero)
-        setTitle(title, for: .normal)
         self.backgroundColor = backgroundColor
 
         configure()
