@@ -29,7 +29,7 @@ class SearchViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = true
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
 
     // MARK:- Configure
@@ -71,7 +71,7 @@ class SearchViewController: UIViewController {
         view.addSubview(ctaButton)
 
         ctaButton.setTitle("Get Followers", for: .normal)
-        ctaButton.addTarget(self, action: #selector(ctaButtonTapped), for: .touchUpInside)
+        ctaButton.addTarget(self, action: #selector(pushFollowerListViewController), for: .touchUpInside)
 
         NSLayoutConstraint.activate([
             ctaButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
@@ -87,7 +87,7 @@ class SearchViewController: UIViewController {
     }
 
     @objc
-    private func ctaButtonTapped() {
+    private func pushFollowerListViewController() {
         guard let userName =  userNameTextField.text, !userName.isEmpty else {
             presentGFAlertControllerOnMainThread(
                 title: SearchViewController.alertTitle,
@@ -104,7 +104,7 @@ class SearchViewController: UIViewController {
 
 extension SearchViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        ctaButtonTapped()
+        pushFollowerListViewController()
         return true
     }
 }
